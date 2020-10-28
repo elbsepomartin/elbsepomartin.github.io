@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="./css/effects.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61acc6a532.js" crossorigin="anonymous"></script>
+    <title>PORTFOLIO</title>
+</head>
+
+<body class="scroll--lock">
+
+    <!-- Nav menu -->
+    <header class="header__nav opacity--active" id="nav--header">
+        <a class="logo__text" href="#nav--header">SEPO-MARTIN ELB</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#education--page">Education</a></li>
+                <li><a href="#work--page">Work</a></li>
+                <li><a href="#skills--page">Skills</a></li>
+                <li><a href="#contact--page">Contact</a></li>
+            </ul>
+        </nav>
+        <!--<p class="menu cta">Menu</p>-->
+    </header>
+
+    <!-- Mobile menu (hidden on desktop)
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#education--page">Education</a>
+            <a href="#work--page">Work</a>
+            <a href="#skills--page">Skills</a>
+            <a href="#contact--page">Contact</a>
+        </div>
+    </div> -->
+
+    <!-- Modals -->
+    <div class="modals">
+        <div class="close--button opacity--active">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="modal-1 opacity--active">
+            <div class="modal__image"><img src="./images/aasta_tegija_2020.png" alt=""></div>
+            <h3>A page created with HTML, CSS and PHP + MySQL as a part of a school contest.</h3>
+        </div>
+
+        <div class="modal-2 opacity--active">
+            <div class="modal__image"><img src="./images/apismel.png" alt=""></div>
+            <h3>A page created with Wordpress for a client in a school subject.</h3>
+        </div>
+
+        <div class="modal-3 opacity--active">
+            <div class="modal__image"><img src="./images/nooruse.png" alt=""></div>
+            <h3>A page created with HTML, CSS and a bit of JavaScript on my internship.</h3>
+        </div>
+    </div>
+
+    <!-- Intro -->
+    <section class="home" id="home--page">
+        <div class="home__info">
+            <h1>Hi, I'm Sepo-Martin - a Junior Software Developer.</h1>
+            <a class="next__button" href="#main-page">
+                <p>This is my story</p>
+                <p></p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="main__content opacity--active" id="main--page">
+        <div class="education" id="education--page">
+            <h1 class="header__text">Education</h1>
+            <div class="education__boxes">
+                <div class="education__box">
+                    <h1>Tapa Gümnaasium</h1>
+                    <p>2006-2018</p>
+                    <li>Cisco certificate (2017)</li>
+                </div>
+                <div class="education__box">
+                    <h1>Tartu Vocational Education Centre</h1>
+                    <h2>Junior Software Developer</h2>
+                    <p>2019-...</p>
+                    <li>Aasta Tegija 2020 - III place</li>
+                </div>
+                <div class="education__box">
+                    <p>I like to spend my free time developing my ability to think faster, critically and more ahead. Learning about new things is my strong trait and classifies as the most important thing for me in software development.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="work" id="work--page">
+            <h1 class="header__text">Work</h1>
+            <div class="work__boxes">
+                <div class="work__box">
+                    <img src="./images/aasta_tegija_2020.png" alt="" class="work--img-1">
+                    <p>Aasta Tegija 2020</p>
+                </div>
+                <div class="work__box">
+                    <img src="./images/apismel.png" alt="" class="work--img-2">
+                    <p>Apismel OÜ</p>
+                </div>
+                <div class="work__box">
+                    <img src="./images/nooruse.png" alt="" class="work--img-3">
+                    <p>Tartu Health Care College Projects Page</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills" id="skills--page">
+            <h1 class="header__text">Skills</h1>
+            <div class="skill__boxes">
+                <div class="skill__box">
+                    <p>HTML & CSS</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <div class="skill__box--text">
+                        <p>Able to write HTML and CSS on an intermediate level. Most of the knowledge and experience came when interning on my first year in Tartu Health Care College as a Web Developer, mainly using HTML, CSS and also a small bit of JavaScript
+                            to create a page for their projects.</p>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <p>JavaScript</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <div class="skill__box--text">
+                        <p>Amateur experience in JavaScript from writing raw JavaScript code for class website projects.</p>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <p>Node.js (Express, MongoDB)</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <div class="skill__box--text">
+                        <p>Experience with Node.js (and MongoDB for the database) from a Node.js and Express bank API project in school. <a href="https://github.com/elbsepomartin/pank2" target="_blank">Github</a></p>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <p>MySQL</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <div class="skill__box--text">
+                        <p>Able to write simple functions and triggers. Good with database requests/queries.</p>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <p>Python</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <div class="skill__box--text">
+                        <p>Basic knowledge of syntax, primitives, built-in types, if/elif/else, simple math calculations.</p>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <p>Java</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <div class="skill__box--text">
+                        <p>Currently learning Java in school.</p>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <p>Wordpress</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <div class="skill__box--text">
+                        <p>Fairly familiar with Wordpress and how it works. Can build sites with the help of plugins. Previous experience with building a site for a customer as part of a school project <a href="#work--page">(2nd project on Work)</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact--page">
+            <h1 class="header__text">Contact</h1>
+            <div class="contact__boxes">
+                <div class="contact__box">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <p>sepo-martin.elb@khk.ee</p>
+                </div>
+                <div class="contact__box">
+                    <i class="fab fa-github fa-2x"></i>
+                    <p><a href="https://github.com/elbsepomartin">elbsepomartin</a></p>
+                </div>
+                <div class="contact__box">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <p><a href="https://www.linkedin.com/in/sepo-martin-e-7084431b5/">Sepo-Martin Elb</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="logo__text">Sepo-Martin Elb &copy;2020</p>
+    </footer>
+
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
