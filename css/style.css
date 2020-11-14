@@ -321,6 +321,10 @@ footer p {
     text-align: center;
 }
 
+.work__box p:nth-child(3) {
+    color: gray;
+}
+
 .work__box img {
     border: 1px solid black;
     height: 80%;
