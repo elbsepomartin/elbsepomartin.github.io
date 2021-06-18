@@ -11,223 +11,207 @@
     <link rel="stylesheet" type="text/css" href="./css/effects.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/61acc6a532.js" crossorigin="anonymous"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2HR455ETM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-B2HR455ETM');
     </script>
-    
+
     <title>PORTFOLIO</title>
 </head>
 
-<body class="scroll--lock">
-
-    <!-- Nav menu -->
-    <header class="header__nav opacity--active" id="nav--header">
-        <a class="logo__text" href="#nav--header">SEPO-MARTIN ELB</a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#education--page">Education</a></li>
-                <li><a href="#work--page">Work</a></li>
-                <li><a href="#skills--page">Skills</a></li>
-                <li><a href="#contact--page">Contact</a></li>
-            </ul>
-        </nav>
-        <!--<p class="menu cta">Menu</p>-->
-    </header>
-
-    <!-- Mobile menu (hidden on desktop)
-    <div id="mobile__menu" class="overlay">
-        <a class="close">&times;</a>
-        <div class="overlay__content">
-            <a href="#education--page">Education</a>
-            <a href="#work--page">Work</a>
-            <a href="#skills--page">Skills</a>
-            <a href="#contact--page">Contact</a>
-        </div>
-    </div> -->
-
+<body>
     <!-- Modals -->
-    <div class="modals">
-        <div class="close--button opacity--active">
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="modal-1 opacity--active">
-            <div class="modal__image"><img src="./images/aasta_tegija_2020.png" alt=""></div>
-        </div>
-
-        <div class="modal-2 opacity--active">
-            <div class="modal__image"><img src="./images/apismel.png" alt=""></div>
-        </div>
-
-        <div class="modal-3 opacity--active">
-            <div class="modal__image"><img src="./images/nooruse.png" alt=""></div>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 1000px; height: auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">A WordPress E-commerce site for Apismel OÜ | <span><a
+                                href="http://apismel.ee" target="_blank">apismel.ee</a></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/apismel.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <p class="text-start">Technologies used: HTML, CSS, vanilla JS</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Intro -->
-    <section class="home" id="home--page">
-        <div class="home__info">
-            <h1>Hi, I'm Sepo-Martin - a Junior Software Developer.</h1>
-            <a class="next__button" href="#main-page">
-                <p>This is my story</p>
-                <p></p>
-            </a>
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 1000px; height: auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">A project page for Tartu Health Care College</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/nooruse.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <p class="text-start">Technologies used: HTML, CSS, vanilla JS</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 950px; height: auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">A data system for Tartu Health Care College Simulation
+                        Center | <span><a href="https://simulatsioonikeskus.eu"
+                                target="_blank">simulatsioonikeskus.eu</a></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/simulatsioonikeskus.png" alt="" class="img-fluid">
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <p class="text-start">Technologies used: Embedded JavaScript Templating (EJS), vanilla JS, Bootstrap
+                        (Front-end); Node.js, Express.js, Passport (Auth), MongoDB (Back-end);</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Main content -->
-    <section class="main__content opacity--active" id="main--page">
-        <div class="education" id="education--page">
-            <h1 class="header__text">Education</h1>
-            <div class="education__boxes">
-                <div class="education__box">
-                    <h1>Tapa Gümnaasium</h1>
-                    <p>2006-2018</p>
-                    <li>Cisco certificate (2017)</li>
+    <section class="main-content" id="main-page">
+
+        <!-- Front -->
+        <div style="position: absolute;"><img style="object-fit: cover; height: 100vh; width: 100vw;"
+                src="./images/background2.jpeg" alt=""></div>
+        <div class="container" style="height: 100vh; padding: 50px;">
+            <div class="row">
+
+                <div class="col">
+                    <div class="personal-image">
+                        <img src="./images/nextproject.png" alt=""
+                            style="background-color: white; border-radius: 50%; width: 475px; height: 475px;">
+                            <p>Coming soon!</p>
+                    </div>
                 </div>
-                <div class="education__box">
-                    <h1>Tartu Vocational Education Centre</h1>
-                    <h2>Junior Software Developer</h2>
-                    <p>2019-...</p>
-                    <li>Aasta Tegija 2020 - III place</li>
+
+                <div class="col">
+                    <div class="personal-text">
+                        <h1>Sepo-Martin Elb</h1>
+                        <h4>Junior Software Developer</h4>
+                    </div>
                 </div>
-                <div class="education__box">
-                    <p>I like to think fast, critically and ahead. Learning about new things is my strong trait and is the most important thing for me in software development.</p>
-                </div>
+
             </div>
         </div>
 
-        <div class="work" id="work--page">
-            <h1 class="header__text">Work</h1>
-            <div class="work__boxes">
-                <div class="work__box">
-                    <img src="./images/aasta_tegija_2020.png" alt="" class="work--img-1">
-                    <p>Aasta Tegija 2020</p>
-                    <p>A page built with HTML & CSS, PHP & MySQL</p>
-                </div>
-                <div class="work__box">
-                    <img src="./images/apismel.png" alt="" class="work--img-2">
-                    <p>Apismel OÜ</p>
-                    <p>A Page built on Wordpress</p>
-                </div>
-                <div class="work__box">
-                    <img src="./images/nooruse.png" alt="" class="work--img-3">
-                    <p>Tartu Health Care College Projects Page</p>
-                    <p>A page built with HTML, CSS & JS</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="skills" id="skills--page">
-            <h1 class="header__text">Skills</h1>
-            <div class="skill__boxes">
-                <div class="skill__box">
-                    <p>HTML & CSS</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-
-                    <div class="skill__box--text">
-                        <p>Able to write HTML and CSS on an intermediate level. Most of the knowledge and experience came when interning on my first year in Tartu Health Care College as a Web Developer, mainly using HTML, CSS and also a small bit of JavaScript
-                            to create a page for their projects.</p>
-                    </div>
-                </div>
-                <div class="skill__box">
-                    <p>JavaScript</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-
-                    <div class="skill__box--text">
-                        <p>Amateur experience in JavaScript from writing vanilla JavaScript code for website projects.</p>
-                    </div>
-                </div>
-                <div class="skill__box">
-                    <p>Node.js (Express, MongoDB)</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-
-                    <div class="skill__box--text">
-                        <p>Experience with Node.js (and MongoDB for the database) from a Node.js and Express bank API project in school. <a href="https://github.com/elbsepomartin/pank2" target="_blank">Github</a></p>
-                    </div>
-                </div>
-                <div class="skill__box">
-                    <p>MySQL</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-
-                    <div class="skill__box--text">
-                        <p>Able to write simple functions and triggers. Database requests/queries.</p>
-                    </div>
-                </div>
-                <div class="skill__box">
-                    <p>Python</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-
-                    <div class="skill__box--text">
-                        <p>Basic knowledge of syntax, primitives, built-in types, if/elif/else, simple math calculations.</p>
-                    </div>
-                </div>
-                <div class="skill__box">
-                    <p>Wordpress</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-
-                    <div class="skill__box--text">
-                        <p>Fairly familiar with Wordpress and how it works. Can build sites with the help of plugins. Previous experience with building a site for a customer as part of a school project <a href="#work--page">(2nd project on Work)</a>.</p>
+        <!-- Education -->
+        <div class="container education" id="education-page">
+            <h1 class="header-text">Education</h1>
+            <div class="education-boxes">
+                <div class="education-box">
+                    <h2>Tartu Vocational Education Centre</h2>
+                    <div class="education-description">
+                        <h4>Junior Software Developer</h4>
+                        <p>2019 - 2021</p>
+                        <p class="secondary-text">Aasta Tegija 2020 - III place</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="contact" id="contact--page">
-            <h1 class="header__text">Contact</h1>
-            <div class="contact__boxes">
-                <div class="contact__box">
+        <!-- Work -->
+        <div class="container">
+            <h1 class="header-text">Work</h1>
+            <div class="row row-cols-2 column-properties">
+
+                <div class="col work">
+                    <div class="image-container">
+                        <img src="./images/apismel.png" alt="" class="img-fluid">
+                        <button type="button" class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modal1"></button>
+                    </div>
+                    <p class="text-center" style="margin-top: 5px;">Apismel OÜ</p>
+                </div>
+
+                <div class="col work">
+                    <div class="image-container">
+                        <img src="./images/nooruse.png" alt="" class="img-fluid">
+                        <button type="button" class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modal2"></button>
+                    </div>
+                    <p class="text-center" style="margin-top: 5px;">Tartu Health Care College Projects Page (Internship)
+                    </p>
+                </div>
+
+                <div class="col work">
+                    <div class="image-container">
+                        <img src="./images/simulatsioonikeskus.png" alt="" class="img-fluid">
+                        <button type="button" class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modal3"></button>
+                    </div>
+                    <p class="text-center" style="margin-top: 5px;">Simulatsioonikeskus.eu (Internship & Graduation
+                        Project)</p>
+                </div>
+
+                <div class="col work">
+                    <div class="image-container">
+                        <img src="./images/nextproject.png" alt="" class="img-fluid">
+                        <button type="button" class="btn custom-btn"></button>
+                    </div>
+                    <p class="text-center" style="margin-top: 5px;">Your projects could be next!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="container contact" id="contact-page">
+            <h1 class="header-text">Contact</h1>
+            <div class="contact-boxes">
+
+                <div class="contact-box">
                     <i class="fas fa-envelope fa-2x"></i>
-                    <p>sepo-martin.elb@khk.ee</p>
+                    <a style="float: left; margin-top: 5.5px; color: inherit;" href="mailto: sepo-martin.elb@khk.ee"
+                        id="email--text">sepo-martin.elb@khk.ee</a>
+                    <i class="fas fa-copy" style="float: left; margin-top: 9px; margin-left: 4px; cursor: pointer;"
+                        onclick="copy()" id="copyButton"></i>
                 </div>
-                <div class="contact__box">
+
+                <div class="contact-box">
                     <i class="fab fa-github fa-2x"></i>
-                    <p><a href="https://github.com/elbsepomartin">elbsepomartin</a></p>
+                    <p style="margin-top: 6.5px;"><a href="https://github.com/elbsepomartin"
+                            target="_blank">elbsepomartin</a></p>
                 </div>
-                <div class="contact__box">
+
+                <div class="contact-box">
                     <i class="fab fa-linkedin fa-2x"></i>
-                    <p><a href="https://www.linkedin.com/in/sepo-martin-e-7084431b5/">Sepo-Martin Elb</a></p>
+                    <p style="margin-top: 6px;"><a href="https://www.linkedin.com/in/sepo-martin-e-7084431b5/"
+                            target="_blank">Sepo-Martin
+                            Elb</a></p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <footer>
-        <p class="logo__text">Sepo-Martin Elb &copy;2021</p>
-    </footer>
+    <input type="input" style="width:10px; position:absolute; z-index: -100 !important; opacity: 0;"
+        value="sepo-martin.elb@khk.ee" id="copy-to-clipboard-input">
 
+    <footer>
+        <p style="margin-top: 18px;" class="logo-text">Sepo-Martin Elb &copy; 2021</p>
+    </footer>
 
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
